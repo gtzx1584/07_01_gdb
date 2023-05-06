@@ -3,9 +3,10 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc アクティブなファイルのビルド（デバッグ用）",
+            "label": "C/C++: gcc build for debug",
             "command": "/usr/local/bin/gcc",
             "args": [
+                "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
@@ -17,16 +18,17 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": "build",
-            "detail": "コンパイラ: /usr/local/bin/gcc"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc アクティブなファイルのビルド",
+            "label": "C/C++: gcc build",
             "command": "/usr/local/bin/gcc",
             "args": [
                 "-fdiagnostics-color=always",
-                "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
@@ -39,9 +41,7 @@
             ],
             "group": {
                 "kind": "build",
-                "isDefault": true
             },
-            "detail": "デバッガーによって生成されたタスク。"
         }
     ]
 }
