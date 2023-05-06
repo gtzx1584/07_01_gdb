@@ -1,10 +1,12 @@
 {
     "recommendations": [
-        "ms-ceintl.vscode-language-pack-ja",
-        "ms-vscode.cpptools",
         "jbenden.c-cpp-flylint",
-        "ms-vscode-remote.vscode-remote-extensionpack",
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-docker",
+        "ms-ceintl.vscode-language-pack-ja",
         "ms-vscode-remote.remote-containers",
-        "ms-azuretools.vscode-docker",   
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "ms-vscode.cpptools",
+        "usernamehw.errorlens",
     ]
 }
